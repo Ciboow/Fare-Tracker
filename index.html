@@ -39,7 +39,7 @@
         <!--Passenger Log In Form-->
         <div id="pLogForm" class="modal">
                     
-            <form class="modal-content animate"action="passenger.html" method="post"> <!--action="/action_page.php"-->
+            <div class="modal-content animate"> <!--action="/action_page.php"-->
                 
                 <div class="imgcontainer">
                     <span onclick="document.getElementById('pLogForm').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -53,7 +53,7 @@
                     <label for="cpword"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="cpword" id="cpword"required>
                         
-                    <button type="submit">Login</button>
+                    <a href="passenger.html"><button type="submit"> Login</button></a>
                     <label>
                         <input type="checkbox" checked="checked" name="remember"> <b>Remember me</b>
                     </label>
@@ -65,12 +65,12 @@
                         <a href="#" onclick="document.getElementById('pSignForm').style.display='block'; let user=document.getElementById(cUName).value;" style="width:auto; color:white;">No account?</a>
                         <a href="#" style="color:white;">Forgot password?</a></span>
                 </div>
-            </form>
+            </div>
         </div>
 
         <div id="cLogForm" class="modal">
                 
-            <form class="modal-content animate" action="chauffer.html" method="post">
+            <div class="modal-content animate">
                 
                 <div class="imgcontainer">
                     <span onclick="document.getElementById('cLogForm').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -84,7 +84,7 @@
                     <label for="pword"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="pword" required>
                         
-                    <button type="submit">Login</button>
+                    <a href="chauffer.html"><button type="submit">Login</button></a>
                     <label>
                         <input type="checkbox" checked="checked" name="remember"> <b>Remember me</b>
                     </label>
@@ -96,13 +96,13 @@
                         <a href="#" onclick="document.getElementById('cSignForm').style.display='block'" style="width:auto; color:white">No account?</a>
                         <a href="#" style="color:white;">Forgot password?</a></span>
                 </div>
-            </form>
+            </div>
         </div>
 
         <!--Passenger Sign Up Form-->
         <div id="pSignForm" class="modal">
         
-            <form class="modal-content animate" action="passenger.html" method="post">
+            <div class="modal-content animate">
                 
                 <div class="imgcontainer">
                     <span onclick="document.getElementById('pSignForm').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -116,19 +116,19 @@
                     <label for="rpword"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="rpword" required>
                         
-                    <button type="submit">Sign up</button>
+                    <a href="passenger.html"><button type="submit">Sign up</button></a>
                 </div>
             
                 <div class="container" style="background-color:#040515">
                     <button type="button" onclick="document.getElementById('pSignForm').style.display='none'" class="cancelbtn">Cancel</button>
                 </div>
-            </form>
+            </div>
         </div>
 
         <!--Chauffer Sign Up Form-->
         <div id="cSignForm" class="modal">
         
-            <form class="modal-content animate" action="chauffer.html" method="post">
+            <div class="modal-content animate">
                 
                 <div class="imgcontainer">
                     <span onclick="document.getElementById('cSignForm').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -142,13 +142,13 @@
                     <label for="rpword"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="rpword" required>
                         
-                    <button type="submit">Sign up</button>
+                    <a href="chauffer.html"><button type="submit">Sign up</button></a>
                 </div>
             
                 <div class="container" style="background-color:#040515">
                     <button type="button" onclick="document.getElementById('cSignForm').style.display='none'" class="cancelbtn">Cancel</button>
                 </div>
-            </form>
+            </div>
         </div>
 
 
