@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <html>
+        <head lang="en">
+            <meta charset="UTF-8">
+            <title>Chauffer</title>
+            <link href='style.css' rel='stylesheet'>
+        </head>
+
+        <body class="bg-container b-white">
+            <h1>Chauffer</h1>
+            <form class="center" style="margin-top:16%">
+                <div class="container">
+                    <div style="padding-bottom:10px;">
+                        <span>User: Chauffer</span><br>
+                        <span id="userId">Your ID: #----</span><br>
+                        <span">Vehicle: 
+                            <select id="vehicle" name="vehicle">
+                                <option value="Jeepney">Jeepney</option>
+                                <option value="Rickshaw">Rickshaw</option>
+                            </select>
+                        </span><br>
+                        <label for="cost"><span>Enter Php/km: </span></label>
+                        <input type="number" placeholder="Enter Cost per km (In Pesos)" name="cost" id='rate' required><br>
+                    </div>
+                    <button type="submit" onclick="">Continue</button>
+                </div>
+            </form>
+            <!--Passenger Output-->
+            <div id="id05" class="modal b-white">
+            
+                <form class="modal-content animate" action="loginPassenger.html" method="post">
+                    
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id05').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <h2>Chauffer ID#----</h2>
+                    </div>
+                
+                    <div class="container">
+
+                        <span>Distance traveled(In km): </span><br>
+                        <span>Php/km: </span><br>
+                        <span>Total Cost: </span>
+                            
+                        <button type="submit">Done</button>
+                    </div>
+                
+                    <div class="container" style="background-color:#040515">
+                        <button type="button" onclick="document.getElementById('id05').style.display='none'" class="cancelbtn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </body>
+    </html>
