@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<Html lang="en">
+    <head>
+        <title>Admin</title>
+        <link href="admin.css" rel="stylesheet">
+        <script src='index.js'></script>
+    </head>
+
+    <body>
+        <div>
+            <h1 style="text-align:center;">FARE TRACKER</h1>
+            <div>
+                <div class="center">
+                    <img class="icon" src="Images/admin.png" alt="Admin icon">
+                </div>
+                <div>
+                    <h3>
+                        <span>ADMIN</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="output-container">
+            <h4 style="margin:0px; position:relative; top:10px;text-align:center;">MOTORCYCLE</h4>
+            <div class="flex" id="mForm">
+                <div class="output-inbox-short">
+                    <p>AVERAGE SPEED: </p> 
+                    <input type="number" id="motorcycleAveSpeed">
+                </div>
+                <div class="output-inbox-short">
+                    <p>1ST N-KM VALUE: </p> 
+                    <input type="number" id="motorcycleMinKmValue">
+                </div>
+                <div class="output-inbox-short">
+                    <p>N-KM VALUE: </p> 
+                    <input type="number" id="motorcycleNValue" style="width:160px; left:107px">
+                </div>
+            </div>
+            <h4 style="margin:0px; position:relative; top:10px;text-align:center;">TRICYCLE</h4>
+            <div class="flex">
+                <div class="output-inbox-short">
+                    <p>AVERAGE SPEED: </p> 
+                    <input type="number" id="tricycleAveSpeed">
+                </div>
+                <div class="output-inbox-short">
+                    <p>1ST N-KM VALUE: </p> 
+                    <input type="number" id="tricycleMinKmValue">
+                </div>
+                <div class="output-inbox-short">
+                    <p>N-KM VALUE: </p> 
+                    <input type="number" id="tricycleNValue" style="width:160px; left:107px">
+                </div>
+            </div>
+            <h4 style="margin:0px; position:relative; top:10px;text-align:center;">AUTO-RICKSHAW</h4>
+            <div class="flex">
+                <div class="output-inbox-short">
+                    <p>AVERAGE SPEED: </p> 
+                    <input type="number" id="rickshawAveSpeed">
+                </div>
+                <div class="output-inbox-short">
+                    <p>1ST N-KM VALUE: </p> 
+                    <input type="number" id="rickshawMinKmValue">
+                </div>
+                <div class="output-inbox-short">
+                    <p>N-KM VALUE: </p> 
+                    <input type="number" id="rickshawNValue" style="width:160px; left:107px">
+                </div>
+            </div>
+
+        </div>
+        <div class="button-container">
+            <button class="button-start" style="background-color: red;" onclick="location.assign('./index.html');"> 
+                <h3>CANCEL</h3>
+            </button>
+            <button class="button-stop" style="background-color:green;" onclick="setVariables();"> 
+                <h3>APPLY</h3>
+            </button>
+        </div>
+    </body>
+</Html>

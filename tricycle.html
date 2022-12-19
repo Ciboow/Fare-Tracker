@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<Html lang="en">
+    <head>
+        <title>Tricycle</title>
+        <link href="subStyle.css" rel="stylesheet">
+        <script src='index.js'></script>
+    </head>
+    <body>
+        <div>
+            <h1 style="text-align:center;">FARE TRACKER</h1>
+            <div>
+                <div class="center">
+                    <img class="icon" src="Images/tricycle_1.png" alt="Motorcycle icon">
+                </div>
+                <div>
+                    <h3>
+                        <span>TRICYCLE</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="output-container">
+
+            <div class="output-inbox-long">
+                <p>FARE PER KM: </p>
+                <input type="number" id="farePerKm">
+            </div>
+
+            <div class="flex">
+                <div class="output-inbox-short" >
+                    <p>TIME STARTED: <span id="timeStarted"></span></p>
+                </div>
+                <div class="output-inbox-short">
+                    <p>TIME ENDED: <span id="timeEnded"></span></p>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="output-inbox-short">
+                    <p>TOTAL M TRAVELED: <span id="distanceTraveled"></span></p>
+                </div>
+                <div class="output-inbox-short">
+                    <p>TOTAL TIME TRAVELED: <span id="totalTimeTraveled"></span></p>
+                </div>
+            </div>
+
+            <div class="output-inbox-long" style="height:60px">
+                <p style="top:15px;">TOTAL FARE: PHP<span id="totalFare">00.00</span></p>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="button-start" onclick="getTime(); getTricycleVariables();document.getElementById('timeStarted').innerHTML= hours +':'+minutes+':'+ seconds;
+            document.getElementById('totalFare').innerHTML = tMinKmValue+'.00';"> 
+                <h3>START</h3>
+            </button>
+            <button class="button-stop" onclick="getTime();document.getElementById('timeEnded').innerHTML= hours +':'+minutes+':'+ seconds;
+            getTotalTimeTraveled();document.getElementById('totalTimeTraveled').innerHTML= hrs+':'+min+':'+secs;
+            getTricycleDistance(tAverageSpeed); document.getElementById('distanceTraveled').innerHTML= distance;
+            getTotalFare(tMinKmValue, tNValue); document.getElementById('totalFare').innerHTML = totalFareCalculated;">
+                <h3>STOP</h3>
+            </button>
+        </div>
+    </body>
+</Html>
