@@ -36,6 +36,8 @@ function setVariables(){
     localStorage.setItem('r-AveSpeed', rAveSpeed);
     localStorage.setItem('r-MinKmValue', rMinKmValue);
     localStorage.setItem('r-NValue', rNValue);
+    
+    window.alert('Values Applied!');
 }
 
 function getMotorcycleVariables(){
