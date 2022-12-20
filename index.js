@@ -37,7 +37,7 @@ function setVariables(){
     localStorage.setItem('r-MinKmValue', rMinKmValue);
     localStorage.setItem('r-NValue', rNValue);
     
-    window.alert('Values Applied!');
+    window.alert('Values applied!');
 }
 
 function getMotorcycleVariables(){
@@ -93,17 +93,19 @@ function getTotalTimeTraveled(){
         }
     }
 }
-
+//Get Distance for All
 function getTricycleDistance(averageSpeed){
-    distance = timeTraveled*averageSpeed;
+    //timeTraveled is in seconds and converting average speed to second
+    distance = timeTraveled*((averageSpeed/60)/60);
     distance = distance.toFixed(4);
 }
 
 function getTotalFare(firstPhpPerKm,nValue){
-    //convert distance from m to km
+
+
     thisFare= document.getElementById('farePerKm');
     
-    distanceKm = distanceTraveled.textContent/1000;
+    distanceKm = distanceTraveled.textContent;
     fare=0;
 
     if(distanceKm>nValue){
