@@ -4,4 +4,8 @@ function validateAccount(){
     if(uName.value=="admin"&& pWord.value=="user"){
         location.assign('./admin.html');
     }
+    else{
+        window.alert('INCORRECT USERNAME OR PASSOWORD!');
+    }
+    
 }
