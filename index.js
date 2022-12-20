@@ -1,4 +1,5 @@
-//Motorcycle Variables
+//Set Default Vehicle Variables
+
 function setVariables(){
 
     mAveSpeed = document.getElementById('motorcycleAveSpeed');
@@ -25,6 +26,7 @@ function setVariables(){
     rMinKmValue = rMinKmValue.value;
     rNValue = rNValue.value;
 
+    //store item to local storage
     localStorage.setItem('m-AveSpeed', mAveSpeed);
     localStorage.setItem('m-MinKmValue', mMinKmValue);
     localStorage.setItem('m-NValue', mNValue);
@@ -44,18 +46,56 @@ function getMotorcycleVariables(){
     mAverageSpeed = localStorage.getItem('m-AveSpeed');
     mMinKmValue = localStorage.getItem('m-MinKmValue');
     mNValue = localStorage.getItem('m-NValue');
+    //Motorcycle Default
+    if(mAverageSpeed==""){
+        mAverageSpeed = 30;
+    }
+    if(mMinKmValue==""){
+        mMinKmValue =30;
+    }
+    if(mNValue==""){
+        mNValue=4;
+    }
+
 }
 
 function getTricycleVariables(){
     tAverageSpeed = localStorage.getItem('t-AveSpeed');
     tMinKmValue = localStorage.getItem('t-MinKmValue');
     tNValue = localStorage.getItem('t-NValue');
+
+    //Tricycle Default
+    if(tAverageSpeed==""){
+        tAverageSpeed = 20;
+        
+    }
+    if(tMinKmValue==""){
+        tMinKmValue = 20;
+    }
+    if(tNValue==""){
+        tNValue=4;
+    }
+    
+
+
 }
 
 function getRickshawVariables(){
     rAverageSpeed = localStorage.getItem('r-AveSpeed');
     rMinKmValue = localStorage.getItem('r-MinKmValue');
     rNValue = localStorage.getItem('r-NValue');
+
+        //Auto-Rickshaw Default
+        if(rAverageSpeed==""){
+            rAverageSpeed = 25;
+        }
+        if(rMinKmValue==""){
+            rMinKmValue = 20;
+        }
+        if(rNValue==""){
+            rNValue=4;
+        }
+        
 }
 
 
