@@ -1,5 +1,22 @@
 //Set Default Vehicle Variables
 
+function setKeys(){
+
+    if(localStorage.length == 0){
+        localStorage.setItem('m-AveSpeed',"");
+        localStorage.setItem('m-MinKmValue',"");
+        localStorage.setItem('m-NValue',"");
+
+        localStorage.setItem('t-AveSpeed',"");
+        localStorage.setItem('t-MinKmValue',"");
+        localStorage.setItem('t-NValue',"");
+
+        localStorage.setItem('r-AveSpeed',"");
+        localStorage.setItem('r-MinKmValue',"");
+        localStorage.setItem('r-NValue',"");
+    }
+}
+
 function setVariables(){
 
     mAveSpeed = document.getElementById('motorcycleAveSpeed');
