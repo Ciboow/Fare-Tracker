@@ -45,12 +45,12 @@
             </div>
 
             <div class="output-inbox-long" style="height:60px">
-                <p style="top:15px;">TOTAL FARE: PHP<span id="totalFare">00.00</span></p>
+                <p style="top:15px;">TOTAL FARE: ₱ <span id="totalFare">00.00</span></p>
             </div>
         </div>
         <div class="button-container">
             <button class="button-start" onclick="setKeys(); getTime(); getTricycleVariables();document.getElementById('timeStarted').innerHTML= hours +':'+minutes+':'+ seconds;
-            document.getElementById('totalFare').innerHTML = tMinKmValue+'.00';"> 
+            document.getElementById('totalFare').innerHTML = tMinKmValue;"> 
                 <h3>START</h3>
             </button>
             <button class="button-stop" onclick="getTime();document.getElementById('timeEnded').innerHTML= hours +':'+minutes+':'+ seconds;
