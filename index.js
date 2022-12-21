@@ -82,6 +82,8 @@ function getMotorcycleVariables(){
     }
 
 }
+
+
 //Set Default Value for Vehicle Variables
 function setDefault(){
     mAveSpeed = 30;
@@ -115,6 +117,22 @@ function setDefault(){
     window.alert('Default Values Applied!');
 }
 
+function loadSetValues(){
+    document.getElementById('motorcycleAveSpeed').value = localStorage.getItem('m-AveSpeed');
+    document.getElementById('motorcycleMinKmValue').value = localStorage.getItem('m-MinKmValue');
+    document.getElementById('motorcycleNValue').value = localStorage.getItem('m-NValue');
+
+    document.getElementById('tricycleAveSpeed').value = localStorage.getItem('t-AveSpeed');
+    document.getElementById('tricycleMinKmValue').value = localStorage.getItem('t-MinKmValue');
+    document.getElementById('tricycleNValue').value = localStorage.getItem('t-NValue');
+    document.getElementById('tricycleCostPerMinute').value = localStorage.getItem('t-CostPerMin');
+
+    document.getElementById('rickshawAveSpeed').value = localStorage.getItem('r-AveSpeed');
+    document.getElementById('rickshawMinKmValue').value = localStorage.getItem('r-MinKmValue');
+    document.getElementById('rickshawNValue').value = localStorage.getItem('r-NValue');
+    document.getElementById('rickshawCostPerMinute').value = localStorage.getItem('r-CostPerMin');
+
+}
 function getTricycleVariables(){
     tAverageSpeed = localStorage.getItem('t-AveSpeed');
     tMinKmValue = localStorage.getItem('t-MinKmValue');
