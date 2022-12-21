@@ -100,16 +100,16 @@ p{
 }
 
 .output-inbox-long input{
-    width:230px;
+    width:200px;
     position:relative;
     top:9px;
-    left:140px;
+    left:170px;
 }
 .output-inbox-short input{
-    width:125px;
+    width:97px;
     position:relative;
     top:9px;
-    left:140px;
+    left:170px;
 }
 
 /*-----------BUTTON------------*/
