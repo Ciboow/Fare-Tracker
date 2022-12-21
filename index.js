@@ -115,6 +115,8 @@ function setDefault(){
     localStorage.setItem('r-CostPerMin', rCostPerMin);
 
     window.alert('Default Values Applied!');
+    
+    loadSetValues();
 }
 
 function loadSetValues(){
