@@ -4,6 +4,7 @@
         <title>Admin</title>
         <link href="admin.css" rel="stylesheet">
         <script src='index.js'></script>
+        
     </head>
 
     <body>
@@ -21,26 +22,29 @@
             </div>
         </div>
         <div class="output-container">
+            <!---------------MOTORCYCLE VAR---------------->
             <h4 style="margin:0px; position:relative; top:10px;text-align:center;">MOTORCYCLE</h4>
             <div class="flex" id="mForm">
-                <div class="output-inbox-short">
-                    <p>AVERAGE SPEED: </p> 
-                    <input type="number" id="motorcycleAveSpeed">
+                <div class="output-inbox-long">
+                    <p>AVE. SPEED(KM/HR): </p> 
+                    <input type="number" id="motorcycleAveSpeed" style="width:210px; left:160px;">
                 </div>
-                <div class="output-inbox-short">
+                <div class="output-inbox-long">
                     <p>1ST N-KM VALUE: </p> 
                     <input type="number" id="motorcycleMinKmValue">
                 </div>
-                <div class="output-inbox-short">
+                <div class="output-inbox-long">
                     <p>N-KM VALUE: </p> 
-                    <input type="number" id="motorcycleNValue" style="width:160px; left:107px">
+                    <input type="number" id="motorcycleNValue" style="width:264px; left:107px">
                 </div>
             </div>
+
+            <!-----------------TRICYCLE VAR------------------>
             <h4 style="margin:0px; position:relative; top:10px;text-align:center;">TRICYCLE</h4>
             <div class="flex">
                 <div class="output-inbox-short">
-                    <p>AVERAGE SPEED: </p> 
-                    <input type="number" id="tricycleAveSpeed">
+                    <p>AVE. SPEED(KM/HR): </p> 
+                    <input type="number" id="tricycleAveSpeed" style="width:105px; left:160px;">
                 </div>
                 <div class="output-inbox-short">
                     <p>1ST N-KM VALUE: </p> 
@@ -50,12 +54,18 @@
                     <p>N-KM VALUE: </p> 
                     <input type="number" id="tricycleNValue" style="width:160px; left:107px">
                 </div>
+                <div class="output-inbox-short">
+                    <p>COST PER MIN: </p> 
+                    <input type="number" id="tricycleCostPerMinute" style="width:150px; left:117px;">
+                </div>
             </div>
+
+            <!------------------AUTO-RICKSHAW VAR-------------->
             <h4 style="margin:0px; position:relative; top:10px;text-align:center;">AUTO-RICKSHAW</h4>
             <div class="flex">
                 <div class="output-inbox-short">
-                    <p>AVERAGE SPEED: </p> 
-                    <input type="number" id="rickshawAveSpeed">
+                    <p>AVE. SPEED(KM/HR): </p> 
+                    <input type="number" id="rickshawAveSpeed" style="width:105px; left:160px;">
                 </div>
                 <div class="output-inbox-short">
                     <p>1ST N-KM VALUE: </p> 
@@ -65,12 +75,20 @@
                     <p>N-KM VALUE: </p> 
                     <input type="number" id="rickshawNValue" style="width:160px; left:107px">
                 </div>
+                <div class="output-inbox-short">
+                    <p>COST PER MIN: </p> 
+                    <input type="number" id="rickshawCostPerMinute" style="width:150px; left:117px;">
+                </div>
             </div>
-
         </div>
-        <div class="button-container">
+
+        <!------------------START & STOP BUTTON-------------->
+        <div class="button-container flex">
             <button class="button-start" style="background-color: red;" onclick="location.assign('./index.html');"> 
                 <h3>CANCEL</h3>
+            </button>
+            <button class="button-start" style="background-color:white;" onclick="setDefault();"> 
+                <h3>DEFAULT</h3>
             </button>
             <button class="button-stop" style="background-color:green;" onclick="setVariables();"> 
                 <h3>APPLY</h3>
